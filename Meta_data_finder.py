@@ -1,10 +1,10 @@
 from PIL import Image
 
 # Open the image file
-image = Image.open('test.jpg')
-
+cam_image = Image.open('test.jpg')
+stable_diffusion_image = Image.open('stable_test.jpg')
 # Get the metadata
-metadata = image.getexif()
-
+metadata1 = cam_image.getexif()
+metadata2 = stable_diffusion_image.getexif()
 # Print the metadata
 print(metadata)
